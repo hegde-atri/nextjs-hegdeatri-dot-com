@@ -4,7 +4,7 @@ description: "Created the site!"
 date: '2022-06-21'
 author: 'Atri Hegde'
 author_image: '/images/logo.png'
-cover_image: ''
+cover_image: '/images/logo.png'
 category: 'Blog'
 ---
 
