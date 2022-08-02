@@ -9,4 +9,3 @@ I will be making a theme repo so that people can use my 'template' and use their
 - make the theme
 - add dark mode styles
 - make logo
-- add marked and gray-matter integration

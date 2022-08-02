@@ -1,11 +1,12 @@
-import Layout from '../../../components/Layout'
-import Post from '../../../components/Post'
+import Layout from '@/components/Layout'
+import Post from '@/components/Post'
 import Link from 'next/link'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { sortByDate } from '../../../utils'
-import { POSTS_PER_PAGE } from '../../../config'
+import { sortByDate } from '@/utils/index'
+import { POSTS_PER_PAGE } from '@/config/index'
+import Paginator from '@/components/Paginator'
 
 export default function PostsPage({posts, numPages, currentPage}) {
   return (
@@ -14,6 +15,7 @@ export default function PostsPage({posts, numPages, currentPage}) {
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {posts.map((post, index) => (<Post key={index} post={post} />))}
       </div>
+      <Paginator currentPage={currentPage} numPages={numPages} parentPage="posts"/>
     </Layout>
   )
 }
