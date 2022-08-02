@@ -6,7 +6,7 @@ export default function handler(req, res) {
   let posts;
 
   if (process.env.NODE_ENV === "production") {
-    // fetch from cache
+    posts = require('../../cache/data').posts
   } else {
     const postFiles = fs.readdirSync(path.join("posts"));
     const projectFiles = fs.readdirSync(path.join("projects"));
