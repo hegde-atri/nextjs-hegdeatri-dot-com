@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout'
 
-export default function about() {
+export default function AboutPage() {
   return (
     <Layout title='About | Atri Hegde'>
       <h1 className='text-3xl border-b-4 pb-5 font-bold'>
