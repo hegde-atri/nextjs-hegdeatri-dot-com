@@ -7,17 +7,16 @@ export default function CategoriesPage({ uniqueCategories }) {
     <Layout>
       <CategoryList categories={uniqueCategories} />
     </Layout>
-  )
-
+  );
 }
 
 export async function getStaticProps() {
-  const posts = getPosts()
-  const categories = posts.map(post => post.frontmatter.category)
-  const uniqueCategories = [...new Set(categories)]
+  const posts = getPosts();
+  const categories = posts.map((post) => post.frontmatter.category);
+  const uniqueCategories = [...new Set(categories)];
   return {
     props: {
       uniqueCategories,
-    }
-  }
+    },
+  };
 }

@@ -2,12 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 
 // module.exports = nextConfig
 module.exports = {
   images: {
-    domains: ['randomuser.me'],
+    domains: ["randomuser.me"],
   },
-}
-
+};
