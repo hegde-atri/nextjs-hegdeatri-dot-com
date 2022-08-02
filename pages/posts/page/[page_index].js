@@ -1,10 +1,7 @@
 import Layout from "@/components/Layout";
 import Post from "@/components/Post";
-import Link from "next/link";
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
-import { sortByDate } from "@/utils/index";
 import { POSTS_PER_PAGE } from "@/config/index";
 import Paginator from "@/components/Paginator";
 import { getPosts } from "@/lib/posts";
@@ -59,7 +56,6 @@ export async function getStaticProps({ params }) {
     pageIndex * POSTS_PER_PAGE,
     (pageIndex + 1) * POSTS_PER_PAGE
   );
-
   // return the posts data (slug + frontmatter)
   return {
     props: {
