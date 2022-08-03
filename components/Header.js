@@ -29,17 +29,17 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-indigo-900 text-violet-300 shadow w-full">
+    <header className="bg-white dark:bg-dark w-full">
       <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row">
         <Link href="/">
           <a className="flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0">
             <Image src="/images/logo.png" width={40} height={40} alt="logo" />
-            <span className="ml-3 text-2xl">Atri Hegde</span>
+            <span className="ml-3 text-2xl font-semibold">Atri Hegde</span>
           </a>
         </Link>
         <nav className="flex flex-wrap md:w-4/5 items-center justify-end text-base md:ml-auto">
           <Link href="/posts">
-            <a className="mx-5 cursor-pointer hover:text-violet-50">Posts</a>
+            <a className="mx-5 cursor-pointer hover:text-violet-50 dark:hover:text-blue-600">Posts</a>
           </Link>
           <Link href="/projects">
             <a className="mx-5 cursor-pointer hover:text-violet-50">Projects</a>

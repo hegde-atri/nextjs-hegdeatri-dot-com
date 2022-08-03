@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import CategoryLabel from "./CategoryLabel";
-// import CategoryLabel from './CategoryLabel'
 
 export default function Post({ post, compact }) {
   return (
