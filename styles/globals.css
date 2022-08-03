@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background: #ffffff;
+}
+html.dark{
+  background: #1A1B26;
+}
+
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -11,6 +19,7 @@
     background: black;
   }
 } */
+
 /* For markdown */
 p {
   margin: 15px 0;
@@ -42,13 +51,12 @@ ol {
   font-size: 27px;
 }
 
-.bg-slate-500 {
-  background: #1A1B26;
-  background-color: #1A1B26;
+.bg-green {
+  background: #16A34A;
 }
-.bg-dusk {
-  background: #565F89;
+.bg-yellow {
+  background: #EAB308;
 }
-.bg-lavender {
-  background: #79459A;
+.bg-blue {
+  background: #3B82F6;
 }

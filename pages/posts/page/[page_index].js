@@ -9,17 +9,20 @@ import { getPosts } from "@/lib/posts";
 export default function PostsPage({ posts, numPages, currentPage }) {
   return (
     <Layout>
-      <h1 className="text-2xl border-b-4 p-5">Posts</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <h1 className="text-3xl border-b-4 p-5 text-center font-semibold">Posts</h1>
+      <div className="mx-auto w-3/4 grid grid-cols-1">
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
       </div>
+      <div className="mx-auto grid grid-cols-1 place-content-center">
       <Paginator
         currentPage={currentPage}
         numPages={numPages}
         parentPage="posts"
       />
+      </div>
+      
     </Layout>
   );
 }
