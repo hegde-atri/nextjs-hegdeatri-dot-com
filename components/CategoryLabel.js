@@ -6,10 +6,9 @@ export default function CategoryLabel({ children }) {
     Bash: "blue",
     Guide: "green",
   };
-  console.log(colorKey[children])
 
   return (
-    <div className={`px-2 py-1 bg-${colorKey[children]} text-gray-100 font-bold rounded dark:text-dark`}>
+    <div className={`px-2 py-1 bg-${colorKey[children]} text-gray-100 font-bold rounded dark:text-mantle`}>
       <Link href={`/category/${children.toLowerCase()}`}>{children}</Link>
     </div>
   );

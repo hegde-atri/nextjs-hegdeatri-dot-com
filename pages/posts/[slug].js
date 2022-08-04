@@ -14,20 +14,23 @@ export default function PostPage({
 }) {
   return (
     <Layout title={title}>
-      <Link href="/posts">Go Back</Link>
-      <div className="w-full px-10 py-6 rounded-lg shadow-md mt-6">
+      <div className='mx-5 px-2 py-1 rounded-lg inline-flex bg-slate-200 dark:bg-surface0 hover:bg-slate-400 dark:hover:bg-overlay0 text-mantle dark:text-white'>
+        <Link href="/posts">Go Back</Link>
+      </div>
+      
+      <div className="w-full px-10 py-6 rounded-lg shadow-md mt-6 bg-gray-50 dark:bg-mantle">
         <div className="flex justify-between items-center mt-4">
           <h1 className="text-3xl mb-7">{title}</h1>
           <CategoryLabel>{category}</CategoryLabel>
         </div>
-        <Image
+        {/* <Image
           className="rounded"
           src={cover_image}
           alt=""
           height="800"
           width="1200"
-        />
-        <div className="flex justify-between items-center bg-gray-100 p-2 my-8">
+        /> */}
+        <div className="flex justify-between items-center bg-gray-100 dark:bg-surface0 rounded-md p-2 my-8">
           <div className="flex items-center">
             <div>
               <Image

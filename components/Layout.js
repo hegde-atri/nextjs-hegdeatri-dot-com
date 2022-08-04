@@ -3,7 +3,7 @@ import Header from "./Header";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
-    <div className="bg-white dark:bg-dark">
+    <div className="bg-white dark:bg-base1">
       <Head>
         <title>{title}</title>
         <meta name="keywords" content={keywords} />

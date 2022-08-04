@@ -20,7 +20,7 @@ export default function Header() {
     } else {
       return (
         <BsSunFill
-          className="w-6 h-6 text-dark hover:text-dusk"
+          className="w-6 h-6 text-base hover:text-peach"
           role="button"
           onClick={() => setTheme("dark")}/>
       );
@@ -28,8 +28,8 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-slate-200 dark:bg-dusk sticky top-0 z-50">
-      <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row text-dark dark:text-slate-200">
+    <header className="bg-slate-200 dark:bg-crust sticky top-0 z-50">
+      <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row dark:text-slate-200">
         <Link href="/">
           <a className="flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0">
             <Image className='rounded-lg' src="/images/logo.png" width={40} height={40} alt="logo" quality={100} />
@@ -38,13 +38,13 @@ export default function Header() {
         </Link>
         <nav className="flex flex-wrap md:w-4/5 items-center justify-end text-base md:ml-auto">
           <Link href="/posts">
-            <a className="mx-5 cursor-pointer hover:text-blue-700 dark:hover:text-slate-900">Posts</a>
+            <a className="mx-5 cursor-pointer hover:text-blue-700 dark:hover:text-overlay0">Posts</a>
           </Link>
           <Link href="/projects">
-            <a className="mx-5 cursor-pointer hover:text-blue-700 dark:hover:text-slate-900">Projects</a>
+            <a className="mx-5 cursor-pointer hover:text-blue-700 dark:hover:text-overlay0">Projects</a>
           </Link>
           <Link href="/about">
-            <a className="mx-5 cursor-pointer hover:text-blue-700 dark:hover:text-slate-900">About</a>
+            <a className="mx-5 cursor-pointer hover:text-blue-700 dark:hover:text-overlay0">About</a>
           </Link>
           {renderThemeChanger()}
         </nav>
