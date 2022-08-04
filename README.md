@@ -1,6 +1,6 @@
 # nextjs-hegdeatri-dot-com
 
-My website redesigned using The Next.js framework. You can visit it at [https://next.hegdeatri.com](https://next.hegdeatri.com). It is still in development and is the successor to my old website - [https://hegdeatri.com](https://hegdeatri.com) which you check out [here](https://github.com/hegde-atri/hegdeatri-dot-com). It has a much better light/dark theme and I also have much more cotrol making it easier to add/remove features as needed as opposed to my old site, where I was using the [Zola](https://getzola.org) theme.
+My website redesigned using The Next.js framework. You can visit it at [https://next.hegdeatri.com](https://next.hegdeatri.com). It is still in development and is the a test project before i code the successor to my old website - [https://hegdeatri.com](https://hegdeatri.com). It has a much better light/dark theme and I also have much more cotrol making it easier to add/remove features as needed as opposed to my old site, where I was using the [Zola](https://getzola.org) theme.
 
 ## Instructions
 

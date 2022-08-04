@@ -4,16 +4,23 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { getPosts } from "@/lib/posts";
+import CategoryList from '@/components/CategoryList';
 
-export default function CategoryPage({ posts, categoryName }) {
+export default function CategoryPage({ posts, categoryName, uniqueCategories }) {
   return (
     <Layout>
-      <h1 className="text-2xl border-b-4 p-5">Category: {categoryName}</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <h1 className="text-2xl border-b-4 p-5 capitalize">Category: {categoryName}</h1>
+      <div className="inline-flex">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-3/4">
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
       </div>
+      <div className='w-1/4 ml-5'>
+        <CategoryList categories={uniqueCategories} />
+      </div>
+      </div>
+      
     </Layout>
   );
 }
